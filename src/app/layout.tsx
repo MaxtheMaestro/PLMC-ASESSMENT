@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NovaTech Internal Tools Dashboard",
+  title: "NovaTech | Internal Tools Dashboard",
   description: "NovaTech Solutions internal tools and operations dashboard",
 };
 
