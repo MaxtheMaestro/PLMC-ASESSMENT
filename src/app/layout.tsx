@@ -14,7 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "NovaTech | Internal Tools Dashboard",
+
   description: "NovaTech Solutions internal tools and operations dashboard",
+
+
 };
 
 export default function RootLayout({

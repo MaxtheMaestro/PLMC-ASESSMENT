@@ -58,19 +58,25 @@ export default function Home() {
     <div className="flex-1">
       <Header />
 
-      <main className="p-8">
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {tools.map((tool) => (
-            <ToolCard
-              key={tool.title}
-              title={tool.title}
-              description={tool.description}
-              icon={tool.icon}
-              href={tool.href}
-            />
-          ))}
-        </div>
-      </main>
+      <main className="flex min-h-screen flex-col p-8">
+  <div className="flex-1">
+    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {tools.map((tool) => (
+        <ToolCard
+          key={tool.title}
+          title={tool.title}
+          description={tool.description}
+          icon={tool.icon}
+          href={tool.href}
+        />
+      ))}
+    </div>
+  </div>
+
+  <footer className="mt-12 border-t pt-4 text-center text-sm text-slate-900">
+    © {new Date().getFullYear()} NovaTech Solutions • Internal Use Only
+  </footer>
+</main>
     </div>
   </div>
   );
