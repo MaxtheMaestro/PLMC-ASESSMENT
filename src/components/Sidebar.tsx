@@ -17,10 +17,12 @@ export default function Sidebar() {
       </h2>
 
       <nav className="space-y-4">
-        <div className="flex items-center gap-3 rounded-lg p-2 hover:bg-slate-700 cursor-pointer">
-          <LayoutDashboard size={18} />
-          <span>Dashboard</span>
-        </div>
+        <Link href="/">
+          <div className="flex items-center gap-3 rounded-lg p-2 hover:bg-slate-700 cursor-pointer">
+            <LayoutDashboard size={18} />
+            <span>Dashboard</span>
+          </div>
+        </Link>
 
         <Link href="/crm">
         <div className="flex items-center gap-3 rounded-lg p-2 hover:bg-slate-700 cursor-pointer">
