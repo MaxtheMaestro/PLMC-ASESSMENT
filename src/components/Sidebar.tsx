@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   LayoutDashboard,
   Users,
@@ -5,6 +6,7 @@ import {
   LifeBuoy,
   FileText,
   Package,
+  Briefcase,
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -20,31 +22,51 @@ export default function Sidebar() {
           <span>Dashboard</span>
         </div>
 
+        <Link href="/crm">
         <div className="flex items-center gap-3 rounded-lg p-2 hover:bg-slate-700 cursor-pointer">
           <Users size={18} />
           <span>CRM</span>
         </div>
+        </Link>
 
+
+        <Link href="/hr">
+        <div className="flex items-center gap-3 rounded-lg p-2 hover:bg-slate-700 cursor-pointer">
+          <Briefcase size={18} />
+          <span>HR</span>
+        </div>
+        </Link>
+
+
+       <Link href="/analytics">
         <div className="flex items-center gap-3 rounded-lg p-2 hover:bg-slate-700 cursor-pointer">
           <BarChart3 size={18} />
           <span>Analytics</span>
         </div>
+        </Link>
 
+        <Link href="/helpdesk">
         <div className="flex items-center gap-3 rounded-lg p-2 hover:bg-slate-700 cursor-pointer">
           <LifeBuoy size={18} />
           <span>Help Desk</span>
         </div>
+        </Link>
 
+        <Link href="/documents">
         <div className="flex items-center gap-3 rounded-lg p-2 hover:bg-slate-700 cursor-pointer">
           <FileText size={18} />
           <span>Documents</span>
         </div>
+        </Link>
 
+        <Link href="/inventory"> 
         <div className="flex items-center gap-3 rounded-lg p-2 hover:bg-slate-700 cursor-pointer">
           <Package size={18} />
           <span>Inventory</span>
         </div>
+        </Link>
       </nav>
     </aside>
+    
   );
 }

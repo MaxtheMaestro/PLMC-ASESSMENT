@@ -13,7 +13,7 @@ export default function Header() {
         </div>
 
         <div>
-          <p className="font-medium">
+          <p className="font-medium text-black">
             John Smith
           </p>
 

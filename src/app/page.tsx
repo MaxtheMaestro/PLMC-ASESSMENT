@@ -16,31 +16,37 @@ const tools = [
     title: "CRM Portal",
     description: "Manage customer relationships.",
     icon: Users,
+    href: "/crm",
   },
   {
     title: "HR Management",
     description: "Employee records and onboarding.",
     icon: Briefcase,
+    href:"/hr",
   },
   {
     title: "Analytics Dashboard",
     description: "View business performance metrics.",
     icon: BarChart3,
+    href:"/analytics"
   },
   {
     title: "Help Desk",
     description: "Track support tickets.",
     icon: LifeBuoy,
+    href:"/helpdesk"
   },
   {
     title: "Document Center",
     description: "Access internal documents.",
     icon: FileText,
+    href:"/documents"
   },
   {
     title: "Inventory Tracker",
     description: "Manage company assets.",
     icon: Package,
+    href:"/inventory"
   },
 ];
 
@@ -60,6 +66,7 @@ export default function Home() {
               title={tool.title}
               description={tool.description}
               icon={tool.icon}
+              href={tool.href}
             />
           ))}
         </div>
